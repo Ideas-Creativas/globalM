@@ -1,4 +1,12 @@
-@extends('layout.admin')
+@extends('layout.adminlte')
+@section('titulo')
+Productos
+@endsection
+
+
+@section('styles')
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@endsection
 
 @section('content')
 
