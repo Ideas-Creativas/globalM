@@ -24,6 +24,7 @@
         Route::resource('/motos', 'MotosController')->middleware('auth');
     });
 
+  
 
  
 

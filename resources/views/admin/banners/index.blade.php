@@ -1,4 +1,8 @@
-@extends('layout.admin')
+@extends('layout.adminlte')
+
+@section('styles')
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@endsection
 
 @section('content')
     <div class="banner-container">
