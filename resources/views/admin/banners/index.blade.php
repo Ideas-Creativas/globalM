@@ -1,4 +1,7 @@
 @extends('layout.adminlte')
+@section('titulo')
+Banners
+@endsection
 
 @section('styles')
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -20,7 +23,19 @@
                     <td>Vence</td>
                     <td>Acciones</td>
                 </tr>
-            @foreach ($banners as $banner)
+
+                @if(count($banners)==0)
+                <tr>
+
+                <td colspan=5 style="text-align:center;" class="alert alert-warning">
+                 No se encuentran resultados cargados en la Base de Datos
+
+                 </td>
+                </tr>
+                @else
+
+
+                @foreach ($banners as $banner)
                 <tr>
                     <td>
                         <a href="{{ $banner->link }}" target="_blank">
@@ -36,6 +51,9 @@
                     </td>
                 </tr>
             @endforeach
+
+                @endif
+           
             </table>
             
             </ul>
