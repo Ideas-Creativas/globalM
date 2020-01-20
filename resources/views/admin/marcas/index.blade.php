@@ -5,7 +5,7 @@ Productos
 
 
 @section('styles')
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/appAdmin.css') }}" rel="stylesheet">
 @endsection
 
 @section('content')
