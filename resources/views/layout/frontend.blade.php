@@ -12,7 +12,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app_front.css') }}" rel="stylesheet">
     <style type="text/css">
     @font-face {
         font-family: dinAlternate;
