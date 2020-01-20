@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="motos-container">
-  <div id="slideInteriores"></div>
+  <div id="slideInteriores">adadas</div>
   <div>
-    <div id="menuBar"></div>
+    <div id="menubarmotos"></div>
   </div>
   <div>
-    <div id="listaMotos"></div>
+    <div id="motos"></div>
   </div>
 </div>
 @endsection
