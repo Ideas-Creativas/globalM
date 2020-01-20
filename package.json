@@ -25,7 +25,10 @@
         "sass-loader": "^7.1.0"
     },
     "dependencies": {
+        "react-slick": "^0.25.2",
         "react-slider": "^1.0.1",
-        "react-transition-group": "^4.3.0"
+        "react-transition-group": "^4.3.0",
+        "slick-carousel": "^1.8.1",
+        "styled-components": "^5.0.0"
     }
 }

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="index-container">
-  <div id="slide" ></div>
+  <div id="slider" ></div>
 <div class="misionVisionContainer">
   <div class="about-side">
     <div>

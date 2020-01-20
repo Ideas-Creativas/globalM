@@ -8,7 +8,7 @@
 
     <title>{{ config('app.name', 'Global Motos') }}</title>
 
-    <!-- Scripts -->
+    <!-- React -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Styles -->
