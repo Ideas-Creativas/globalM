@@ -280,7 +280,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link ">
+                <a href="{{ route('listadoUsuarios') }}" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Usuarios</p>
                 </a>
@@ -306,7 +306,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
           
           <li class="nav-item">
-            <a href="{{ __('Logout') }}" class="nav-link">
+            <a href="{{route('salir')}}" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Salir
@@ -362,7 +362,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
-<script src="{{ asset('js/app.js') }}" defer></script>
+<script src="{{ asset('js/app.js') }}" ></script>
 
 @yield('scripts')
 

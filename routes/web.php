@@ -18,13 +18,14 @@
     // Admin
     Route::prefix('admin')->group(function() {
         Auth::routes();
-        Route::resource('/', 'AdminController');
+        Route::resource('/', 'AdminController')->middleware('auth');;
         Route::resource('/banners', 'BannersController')->middleware('auth');
         Route::resource('/marcas', 'MarcasController')->middleware('auth');
         Route::resource('/motos', 'MotosController')->middleware('auth');
+        Route::get('/listadoUsuarios', 'HomeController@listadoUsuarios')->name('listadoUsuarios')->middleware('auth');
     });
 
-  
+  Route::get('/salir','HomeController@salir')->name('salir');
 
  
 
