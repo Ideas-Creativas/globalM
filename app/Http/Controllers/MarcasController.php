@@ -138,11 +138,8 @@ class MarcasController extends Controller
             }
         }
 
-            $marca->link = $request->link;
-            $marca->name = $request->name;
+            $marca->marca = $request->name;
             $marca->image_url = $nombre; //$request->image_url;
-            $marca->start = $request->start;
-            $marca->end = $request->end;
             $marca->user_id = Auth::user()->id;
 
             if( $marca->save() ){

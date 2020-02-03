@@ -22,6 +22,7 @@
         Route::resource('/banners', 'BannersController')->middleware('auth');
         Route::resource('/marcas', 'MarcasController')->middleware('auth');
         Route::resource('/motos', 'MotosController')->middleware('auth');
+        Route::resource('/categorias', 'CategoriasController')->middleware('auth');
         Route::get('/listadoUsuarios', 'HomeController@listadoUsuarios')->name('listadoUsuarios')->middleware('auth');
     });
 
