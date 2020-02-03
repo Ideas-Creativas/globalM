@@ -6,12 +6,14 @@ use App\Motos;
 use Faker\Generator as Faker;
 use App\User;
 use App\Marcas;
+use App\Categorias;
 
 $factory->define(Motos::class, function (Faker $faker) {
     return [
         'umage_url' => $faker->imageUrl($width = 640, $height = 480),
         'user_id' => User::all()->random(),
         'marca_id' => Marcas::all()->random(),
+        'categoria_id' => Categorias::all()->random(),
         'description' => "[{
           'modelo' : '". $faker->companySuffix()."',
           'cilindrada':'".$faker->numberBetween($min = 110, $max = 250)."',

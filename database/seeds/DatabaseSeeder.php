@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         factory(\App\User::class)->times(10)->create();
         factory(\App\Marcas::class)->times(3)->create();
+        factory(\App\Categorias::class)->times(5)->create();
         factory(\App\Motos::class)->times(30)->create();
         factory(\App\Banners::class)->times(5)->create();
         // $this->call(UsersTableSeeder::class);

@@ -18,6 +18,7 @@ class CreateMotosTable extends Migration
             $table->timestamps();
             $table->string('umage_url')->foreig();
             $table->unsignedBigInteger('marca_id');
+            $table->unsignedBigInteger('categoria_id');
             $table->text('description');
             $table->bigInteger('user_id');
         });

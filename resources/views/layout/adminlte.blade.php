@@ -220,13 +220,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/admin/productos/" class="nav-link ">
+                <a href="/admin/motos/" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Administrar Motos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/admin/productos/create" class="nav-link">
+                <a href="/admin/motos/create" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Agregar Nueva Moto</p>
                 </a>
