@@ -22,6 +22,24 @@ class MotosController extends Controller
 
     }
 
+    public function jsonIdMotos($id)
+    {
+
+        $moto = Motos::find($id);
+
+        if(is_null($moto)){
+
+            return response()->json($moto, 200); 
+        }
+        else{
+
+            return response()->json($moto->load('marca','categoria'), 200);
+
+            
+        }
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

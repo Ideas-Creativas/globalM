@@ -26,7 +26,9 @@
         Route::get('/listadoUsuarios', 'HomeController@listadoUsuarios')->name('listadoUsuarios')->middleware('auth');
     });
 
-  Route::get('/salir','HomeController@salir')->name('salir');
+    Route::get('/jsonIdMotos/{id}','MotosController@jsonIdMotos')->name('jsonMotos');
+
+    Route::get('/salir','HomeController@salir')->name('salir');
 
  
 

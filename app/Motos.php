@@ -16,14 +16,14 @@ class Motos extends Model
     }
 
 
-    public function marca()//hago la relacion de 1:n de 1 moto puede tener 1 marca pero una marca puede tener muchas motos  $noticias->marca->marca
+    public function marca()//hago la relacion de 1:n de 1 moto puede tener 1 marca pero una marca puede tener muchas motos  $motos->marca->marca
     {
         //pertenece a
         return $this->belongsTo(Marcas::class);
     }
 
 
-    public function categoria()//hago la relacion de 1:n de 1 moto puede tener 1 categoria pero una categoria puede tener muchas motos  $noticias->categoria->categoria
+    public function categoria()//hago la relacion de 1:n de 1 moto puede tener 1 categoria pero una categoria puede tener muchas motos  $motos->categoria->categoria
      {
      	//pertenece a
      	return $this->belongsTo(Categorias::class);
